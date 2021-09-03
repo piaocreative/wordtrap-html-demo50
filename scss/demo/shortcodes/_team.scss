@@ -1,0 +1,62 @@
+
+/* ----------------------------------------------------------------
+
+	team.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Team
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for team pages. Thanks!
+-----------------------------------------------------------------*/
+
+.team {
+    margin-bottom: 1.875rem;
+
+    .team-image {
+        img {
+            width: 100%;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .team-name {
+        font-family: $heading-font;
+        color: $theme-color;
+        font-weight: 600;
+    }
+
+    .team-info {
+        font-family: $body-font;
+        font-size: 0.875rem;
+        color: #9f9f9f;
+        font-weight: 300;
+    }
+
+    .team-details {
+        ul {
+            li {
+                a {
+                    font-family: $heading-font;
+                    font-size: 0.875rem;
+                    color: $dark;
+                    text-decoration: none;
+
+                    i {
+                        color: $theme-color;
+                        margin-right: 0.5rem;
+                    }
+
+                    &:hover {
+                        color: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}

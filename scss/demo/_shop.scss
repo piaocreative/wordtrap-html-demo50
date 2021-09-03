@@ -1,0 +1,341 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+.category {
+	position: relative;
+	border: 1px solid #ebebeb;
+	border-radius: 0.5rem;
+	padding: 2rem 1rem;
+	margin-bottom: 1.875rem;
+	
+	.category-image {
+		max-width: 8rem;
+		height: 4.25rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.category-details {
+		.category-title {
+			font-family: $heading-font;
+			font-size: 1rem;
+			font-weight: 600;
+		}
+
+		.category-content {
+			font-family: $body-font;
+			font-size: 0.8rem;
+			font-weight: 400;
+			line-height: 1.5;
+			color: #7f7f7f;
+		}
+	}
+}
+
+/* Product
+-----------------------------------------------------------------*/
+.product {
+	position: relative;
+	margin-bottom: 1.875rem;
+	background-color: #fafafa;
+	padding: 1.25rem;
+	border-radius: 0.5rem;
+
+	.product-image {
+		position: relative;
+		max-width: 13rem;
+		height: 9.25rem;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 2rem 0.5rem 1rem;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+
+		> a:nth-of-type(2) {
+			opacity: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			right: 0;
+			@include transition(all 0.3s ease-in-out);
+		}
+	}
+
+	.product-category {
+		font-family: $heading-font;
+		font-size: 0.75rem;
+		color: $theme-color;
+		font-weight: 500;
+	}
+
+	.product-price {
+		font-size: 1.5rem;
+		font-family: $heading-font;
+		font-weight: 500;
+		line-height: 1;
+		color: $theme-color;
+
+		del {
+			font-size: 0.875rem;
+			font-weight: 500;
+			color: #7d7d7d;
+			text-decoration: none;
+		}
+	}
+
+	.product-title {
+		font-family: $heading-font;
+		font-size: 1rem;
+		font-weight: 600;
+		color: $dark;
+		line-height: 1.5;
+	}
+
+	.product-rating {
+		font-family: $heading-font;
+		font-size: 1rem;
+		font-weight: 500;
+		color: #979797;
+		line-height: 1;
+
+		i {
+			color: #ffc107;
+
+			&.empty {
+				color: rgba(#ffc107, 0.5);
+			}
+		}
+	}
+
+	.product-btns {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.product-image {
+			> a:nth-of-type(2) {
+				z-index: 1;
+				opacity: 1;
+			}
+		}
+	}
+
+	.add-to-cart {
+		padding: 0.7rem 2rem;
+		width: 100%;
+		font-family: $body-font;
+		font-size: 1rem;
+		color: #fff;
+		font-weight: 600;
+	}
+
+	.add-to-wishlist {
+		color: #888888;
+		display: flex;		
+		align-items: center;
+		justify-content: center;
+		font-size: 1rem;
+		line-height: 1;			
+		text-decoration: none;
+		padding: 0;
+
+		@include transition(all 0.3s ease-in-out);				
+
+		&:hover {
+			color: $dark;
+		}
+	}
+}
+
+.onbest,
+.ontop,
+.onnew,
+.onhot,
+.onsale {
+	font-family: $heading-font;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 0rem .5rem;
+    z-index: 2;
+    width: 2.9rem;
+    height: 1.625rem;
+    border-radius: .3rem;
+    letter-spacing: 0.05rem;
+}
+
+.onhot {
+	background-color: #ff3263;
+	color: $white;
+}
+
+.onnew {
+	background-color: $theme-color;
+	color: $white;
+	text-transform: uppercase;
+}
+
+.onbest {
+	background-color: #8b5ec7;
+	color: $white;
+}
+
+.ontop {
+	background-color: #5adbde;
+	color: $white;
+}
+
+.onsale {
+	background-color: #ff1f1f;
+	color: $white;
+}
+
+.banner-wishlist {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #fe3362;
+}
+
+
+
+
+
+/* Ads
+-----------------------------------------------------------------*/
+
+.ads {
+    position: relative;
+    display: block;
+	margin-bottom: 1.875rem;
+
+	.ads-bg {
+		img {
+			height: 100%;
+			border-radius: 0.5rem;
+		}
+	}
+
+	&.ads1, &.ads2, &.ads3 {
+		.ads-body {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			height: 100%;
+		}
+	}
+
+	&.ads1 {
+		.ads-bg {
+			height: 24rem;
+		}
+
+		.ads-body {
+			padding-top: 4rem;
+
+			h3 {
+				display: inline-block;
+				font-size: 2.8rem;
+				background-color: $theme-color;
+				padding: 0.5rem 2rem;
+				border-radius: 0.5rem;
+				font-weight: 400;
+			}
+
+			h4 {
+				font-size: 1.75rem;
+			}
+
+			p {
+				color: #757575;
+				font-weight: 400;
+			}
+
+			@include media-breakpoint-down(lg) {
+				padding: 1rem;
+			}
+		}
+	}
+
+	&.ads2 {
+		.ads-body {
+			h3 {
+				font-size: 3.2rem;
+				font-weight: 500;
+				line-height: 1;
+			}
+
+			h5 {
+				font-size: 1.25rem;
+			}
+
+			p {
+				color: #808080;
+				font-family: $heading-font;
+			}
+
+			a {
+				font-family: $heading-font;
+				font-size: 0.75rem;
+				background-color: $theme-color;
+				color: white;
+				padding: 0.75rem 1.5rem;
+				border-radius: 0.3rem;
+				text-decoration: none;
+			}
+		}
+	}
+
+	&.ads3 {
+		.ads-bg {
+			height: 16rem;
+		}
+
+
+		.ads-body {
+			h4 {
+				font-weight: 500;
+				line-height: 1.3;
+			}
+
+			p {
+				color: #9abefe;
+				font-family: $heading-font;
+				font-size: 0.75rem;
+			}
+		}
+
+		@include media-breakpoint-down(lg) {
+			margin-top: 1.875rem;
+		}
+	}
+}

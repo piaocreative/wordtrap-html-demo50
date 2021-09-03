@@ -1,0 +1,37 @@
+/* ----------------------------------------------------------------
+
+	404.scss
+
+-----------------------------------------------------------------*/
+.error-404 {
+    position: relative;
+    
+    .error-logo {
+        padding: 4rem 3rem;
+        background-color: $theme-color;
+        font-family: $heading-font;
+        font-size: 4.325rem;
+        font-weight: 500;
+        color: $white;
+        border-radius: 0.5rem;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 11.325rem;
+            padding: 6rem 3rem;
+            margin-bottom: 1.875rem;
+        }
+    }
+
+    .error-content {
+        h5 {
+            font-family: $heading-font;
+            font-size: 1.875rem;
+            font-weight: 400;
+            line-height: 1.2;
+        }
+
+        p {
+            color: #7c7c7c;
+        }
+    }
+}

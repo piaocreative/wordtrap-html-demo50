@@ -1,0 +1,132 @@
+
+/* ----------------------------------------------------------------
+
+	extras.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Extra Styles
+-----------------------------------------------------------------*/
+
+.shipping-banner {
+	position: absolute;
+	left: 4.375rem;
+	top: 5.625rem;	
+}
+
+.link-icon {
+	background-image: url(../images/icons/link.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 2.5625rem;
+	height: 2.5625rem;
+
+	&.black {
+		background-image: url(../images/icons/link_black.png);
+	}
+}
+
+a {
+	.link-icon {
+		@include transition(all 0.3s ease-in-out);
+	}
+
+	&:hover {
+		.link-icon {
+			@include translateX(1rem);
+		}
+	}	
+}
+
+.about {
+	p {
+		font-size: 0.875rem;
+		font-family: $body-font;
+		line-height: 1.5rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+
+		.col-lg-4 {
+			.bg-primary {
+				padding: 2rem !important;
+			}
+		}
+	}
+
+	.about-banner-content {
+		h4 {
+			font-size: 1.325rem;
+			color: #66c584;
+			font-weight: 400;
+		}
+
+		@include media-breakpoint-down(sm) {
+			.w-50 {
+				width: auto !important;
+			}
+		}
+	}
+}
+
+.about-us-link {
+	font-family: $body-font;
+	font-size: .75rem;
+	font-weight: 300;
+	padding: 0.35rem 2.2rem;
+	color: white;
+	background-color: $theme-color;
+	text-decoration: none;
+	border-radius: 0.3rem;
+	display: inline-block;
+}
+
+
+.about-content {
+	h3 {
+		font-size: 2.25rem;
+	}
+
+	p {
+		font-size: 0.75rem;
+		color: #9c9c9f;
+		line-height: 1.3rem;
+	}
+
+	@include media-breakpoint-down(lg) {
+		margin-top: 1rem !important;
+	}
+}
+
+#subscribe {
+	position: relative;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+
+	h4 {
+		font-size: 2.125rem;
+	}
+
+	p {
+		color: #8fb9ff;
+	}
+
+	.decoration {
+		position: absolute;
+		text-align: end;
+		bottom: -3rem;
+
+		@include media-breakpoint-down(sm) {
+			bottom: -2rem;
+			
+			img {
+				width: 7rem;
+			}
+		}
+	}
+}
