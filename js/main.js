@@ -3,33 +3,33 @@ $( document ).ready( function() {
     if ( $( '.logos' ).length ) {
         $( '.logos' ).slick({
             infinite: true,
-            slidesToShow: 7,
-            slidesToScroll: 7,
+            slidesToShow: 4,
+            slidesToScroll: 1,
             dots: false,
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 992,
-                    settings: {
-                        infinite: true,
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
-                    }
-                },
-                {
-                    breakpoint: 768,
+                    breakpoint: 1200,
                     settings: {
                         infinite: true,
                         slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToScroll: 1,
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 991,
                     settings: {
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
                     }
                 }
             ]
