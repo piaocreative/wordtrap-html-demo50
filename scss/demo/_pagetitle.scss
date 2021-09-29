@@ -30,13 +30,6 @@
 		line-height: 1;
 	}
 
-	.sub-title {
-		font-weight: 300;
-		font-size: 1rem;
-		color: #848484;
-		font-family: $heading-font;
-	}
-
 	p {
 		font-size: 1rem;
 		line-height: 1.5;
@@ -52,19 +45,24 @@
 }
 
 .breadcrumb {
-	display: flex;
-	font-size: $h6-font-size;
-	padding: 0.625rem 0;
+	ul {
+		li {
+			a {
+				font-weight: 500;
+				font-size: 1rem;
+				color: #848484;
+				font-family: $heading-font;
+				text-decoration: none;
+				text-transform: uppercase;
 
-	li {
-		padding: 0 0.625rem;
+				&.active {
+					color: $theme-color;
+				}
+			}
 
-		&.active {
-			color: #ddcef5;
-		}
-
-		&:first-child {
-			padding-left: 0;
+			i {
+				color: #848484;
+			}
 		}
 	}
 }
