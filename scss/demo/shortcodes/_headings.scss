@@ -19,26 +19,7 @@
 
 	.title {
 		color: $dark;
-		font-family: $heading-font;
 		font-weight: 400;
-	}
-
-	.sub-title {
-		font-weight: 500;
-		font-size: 0.875rem;
-		color: #969696;
-		font-family: $heading-font;
-
-		i {
-			font-size: 0.8rem;
-		}
-	}
-
-	p {
-		font-size: 1rem;
-		color: $secondary;
-		line-height: 2rem;
-		font-weight: 500;
 	}
 
 	.attach-link {
@@ -59,18 +40,6 @@
 		i {
 			font-size: 0.9rem;
 			margin-left: 0.5rem;
-		}
-	}
-
-	.heading-arrow {
-		a {
-			text-decoration: none;
-			color: #e9e9e9;
-			font-size: 1.5rem;
-
-			&:hover {
-				color: $theme-color;
-			}
 		}
 	}
 }

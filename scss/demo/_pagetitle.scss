@@ -23,7 +23,6 @@
 	left: 0;
 
 	.title {
-		font-family: $heading-font;
 		color: #02b806;
 		line-height: 5.5rem;
 		font-weight: 300;
@@ -31,15 +30,12 @@
 	}
 
 	p {
-		font-size: 1rem;
 		line-height: 1.5;
 		color: #333333;
 	}
 
 	a {
-		font-family: $body-font;
 		font-size: 0.75rem;
-		font-weight: 400;
 		padding: 0.85rem 1.5rem;
 	}
 }
@@ -49,7 +45,7 @@
 		li {
 			a {
 				font-weight: 500;
-				font-size: 1rem;
+				font-size: 0.75rem;
 				color: #848484;
 				font-family: $heading-font;
 				text-decoration: none;

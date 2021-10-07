@@ -40,13 +40,11 @@
 
 	.category-details {
 		.category-title {
-			font-family: $heading-font;
 			font-size: 1rem;
 			font-weight: 600;
 		}
 
 		.category-content {
-			font-family: $body-font;
 			font-size: 0.8rem;
 			font-weight: 400;
 			line-height: 1.5;
@@ -114,7 +112,6 @@
 	}
 
 	.product-title {
-		font-family: $heading-font;
 		font-size: 1rem;
 		font-weight: 600;
 		color: $dark;

@@ -35,15 +35,14 @@ $heading-font:                'Inter', sans-serif;
 
 // Font sizes
 $h1-font-size:                	5rem;
-$h1-about: 						          5.375rem;
 $h2-font-size:                	3.75rem;
 $h3-font-size:                	2.5rem;
 $h4-font-size:                	1.5rem;
 $h5-font-size:                	1.125rem;
-$h6-font-size:               	  0.875rem;
+$h6-font-size:               	0.875rem;
 
 
-$grid-gutter-width:             2rem;
+$grid-gutter-width:             1.875rem;
 
 // border//
 $border-radius:               0.5rem;
@@ -102,7 +101,7 @@ $input-btn-focus-color-opacity: 1;
 
 $input-btn-padding-y:           0.8rem;
 $input-btn-padding-x:           1.5rem;
-$input-btn-font-size:           0.875rem;
+$input-btn-font-size:           0.75rem;
 $input-font-family:             $body-font;
 
 $input-btn-padding-y-sm:        0.67rem;
@@ -116,14 +115,14 @@ $input-btn-font-size-lg:        1.17rem;
 $input-btn-line-height:         1;
 
 $input-btn-focus-width:         1px;
-$input-focus-border-color:      $theme-color;
+$input-focus-border-color:      #ebebeb;
 
 $input-border-radius:           0.5rem;
 $input-border-radius-sm:        1rem !important;
 $input-border-radius-lg:        1.83rem;
 
-$input-font-weight:				      400;
-$input-focus-box-shadow:		    0 0 0 1px #e5e8e8;
+$input-font-weight:				400;
+$input-focus-box-shadow:		0 0 0 1px #e5e8e8;
 $input-placeholder-color:       #4c4c4c;
 
 // Addon//
@@ -134,7 +133,7 @@ $input-group-addon-padding-x:           1.5rem;
 // Buttons
 $btn-font-family:               $body-font;
 
-$btn-padding-y:                 1rem;
+$btn-padding-y:                 0.875rem;
 $btn-padding-x:                 5rem;
 $btn-font-size:                 0.75rem;
 
