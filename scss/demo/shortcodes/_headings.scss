@@ -14,7 +14,7 @@
 -----------------------------------------------------------------*/
 
 .heading-block { 
-	margin-bottom: 2.25rem; 
+	margin-bottom: 1.875rem; 
 	position: relative;
 
 	.title {
@@ -23,15 +23,8 @@
 	}
 
 	.attach-link {
-		font-size: 1rem;
 		color:$theme-color;
-		text-decoration: none;
 		font-family: $heading-font;
-
-		&.btn {
-			font-size: 0.75rem;
-			padding: 0.85rem 1.35rem;
-		}
 
 		&:hover {
 			color: $theme-color;
